@@ -38,9 +38,23 @@ def polinomial_regression(x, y, degree):
     
     return coefficients
 
+def print_polynomial(coefficients):
+    terms = []
+    for i, coeff in enumerate(coefficients):
+        if coeff != 0:
+            if i == 0:
+                terms.append(f"{coeff:.4f}")
+            elif i == 1:
+                terms.append(f"{coeff:.4f} * x")
+            else:
+                terms.append(f"{coeff:.4f} * x^{i}")
+    polynomial = " + ".join(terms)
+    print("La función polinómica es:")
+    print("f(x) =", polynomial)
+
 # Datos de ejemplo
 x = [1, 2, 3, 4, 5, 6, 7]
-y = [0.5,2.5,2,4,3.5,6,5.5]  # Ejemplo para un polinomio de grado 2
+y = [0.5, 2.5, 2, 4, 3.5, 6, 5.5]  # Ejemplo para un polinomio de grado 2
 
 # Grado del polinomio
 degree = 2
@@ -50,3 +64,4 @@ coefficients = polinomial_regression(x, y, degree)
 
 if coefficients is not None:
     print("Coeficientes del polinomio:", coefficients)
+    print_polynomial(coefficients)
