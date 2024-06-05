@@ -44,10 +44,13 @@ def newton_interpolation(x, y, xi):
     return yint, formula, coeficientes
 
 # Ejemplo de uso
-x = [1, 2, 3,4,5]
-y = [0.5,2.5,2,4,3.5]
-xi = 6
+x = [0,4,6,5,3,1.5,2.5,3.5]
+y = [1,1.3862944,1.7917595,1.6094379,1.0986123,0.4054641,0.9162907,1.2527630]
+xi = 2
+
 yint, formula, coeficientes = newton_interpolation(x, y, xi)
 print(f"El valor interpolado en x = {xi} es y = {yint}")
+print("")
 print(f"La fórmula del polinomio de interpolación es: f(x) = {formula}")
+print("")
 print(f"Los coeficientes b del polinomio de interpolación son: {coeficientes}")
