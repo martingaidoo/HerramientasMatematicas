@@ -44,9 +44,9 @@ def newton_interpolation(x, y, xi):
     return yint, formula, coeficientes
 
 # Ejemplo de uso
-x = [300,375,425,475]
-y = [8.7,10,11.3,12.7]
-xi = 400
+x = [2,4,5]
+y = [4.2,5.1,5.8]
+xi = 3
 
 yint, formula, coeficientes = newton_interpolation(x, y, xi)
 print(f"El valor interpolado en x = {xi} es y = {yint}")

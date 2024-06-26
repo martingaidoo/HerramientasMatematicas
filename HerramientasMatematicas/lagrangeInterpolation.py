@@ -28,9 +28,9 @@ def lagrange_interpolation(x, y, xi):
     return sum, formula
 
 # Ejemplo de uso
-x = [0, 4, 6, 5, 3, 1.5, 2.5, 3.5]
-y = [1, 1.3862944, 1.7917595, 1.6094379, 1.0986123, 0.4054641, 0.9162907, 1.2527630]
-xi = 2
+x = [2,4,5]
+y = [4.2,5.1,5.8]
+xi = 3
 yint, formula = lagrange_interpolation(x, y, xi)
 print(f"El valor interpolado en x = {xi} es y = {yint}")
 print("")

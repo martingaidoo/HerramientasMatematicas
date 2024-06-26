@@ -53,11 +53,12 @@ def print_polynomial(coefficients):
     print("f(x) =", polynomial)
 
 # Datos de ejemplo
-x = [1, 2, 3, 4, 5, 6, 7]
-y = [0.5, 2.5, 2, 4, 3.5, 6, 5.5]  # Ejemplo para un polinomio de grado 2
+x = [2,4,5,6,7,8,9,10,11,12]
+
+y = [4.2,5.1,5.8,6.7,7.1,7.9,8.5,8.8,9.3,9.9]  # Ejemplo para un polinomio de grado 2
 
 # Grado del polinomio
-degree = 2
+degree = 1
 
 # Calcular los coeficientes del polinomio
 coefficients = polinomial_regression(x, y, degree)
